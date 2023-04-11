@@ -1,6 +1,6 @@
-const pokedex = require('./pokedex.json');
+const pokedex = require('../pokedex.json');
 
-const getPokemon = (req, res) => {
+exports.getPokemon = (req, res) => {
     res.json(pokedex)
 }
 
