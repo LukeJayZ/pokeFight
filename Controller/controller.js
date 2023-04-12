@@ -4,13 +4,6 @@ const getPokemon = (req, res) => {
   res.json(pokedex);
 };
 
-<<<<<<< HEAD
-exports.getPokemonById = (req, res) =>{
-    const id = parseInt(req.params.id);
-    const pokemon = pokedex.pokemon.find(p => p.id === id);
-    res.json(pokemon);
-};
-=======
 const getPokemonById = (req, res) => {
   const id = parseInt(req.params.id);
   const pokemon = pokedex.filter((p) => p.id === id);
@@ -22,4 +15,3 @@ const getPokemonById = (req, res) => {
 };
 
 module.exports = {getPokemon, getPokemonById};
->>>>>>> 0b7086c5b4a56236eb5b2eaf847abe28683a539f
